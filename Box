@@ -1,0 +1,22 @@
+public class Box {
+	// Member Variables
+	int l, w, h;
+	
+	// Constructor
+	public Box(int l, int w, int h) {
+		this.l = l;
+		this.w = w;
+		this.h = h;
+	}
+	// Volume Method
+	public double getVolume() {
+		double val = l * w * h;
+		return val;
+	}
+	
+	// Surface Area Method
+	public double getSurfaceArea() {
+		double val = 2 * l * w + 2 * l * h + 2 * w * h;
+		return val;
+	}
+}
