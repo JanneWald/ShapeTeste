@@ -1,0 +1,20 @@
+public class Sphere {
+	// Member Variables
+	int r;
+	
+	// Constructor
+	public Sphere(int l, int w, int h) {
+		this.r = r;
+	}
+	// Volume Method
+	public double getVolume() {
+		double val = (4/3) * (Math.PI) * r * r * r;
+		return val;
+	}
+	
+	// Surface Area Method
+	public double getSurfaceArea() {
+		double val = 4 * (Math.PI) * r * r;
+		return val;
+	}
+}
