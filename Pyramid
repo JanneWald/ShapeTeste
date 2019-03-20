@@ -1,0 +1,22 @@
+public class Pyramid {
+	// Member Variables
+	int l, w, h;
+	
+	// Constructor
+	public Pyramid(int l, int w, int h) {
+		this.l = l;
+		this.w = w;
+		this.h = h;
+	}
+	// Volume Method
+	public double getVolume() {
+		double val = (l * w * h)/3;
+		return val;
+	}
+	
+	// Surface Area Method
+	public double getSurfaceArea() {
+		double val = (l * w) + l * (Math.sqrt((w / 2) * (w / 2) + (h * h) + w)) + w * (Math.sqrt(( l/2 * (l/2) + ( h * h ))));
+		return val;
+	}
+}
